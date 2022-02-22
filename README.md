@@ -1,4 +1,4 @@
-# Curvature Graph Generative Adversarial Networks (CurvGAN)
+#[WWW 2022] Curvature Graph Generative Adversarial Networks (CurvGAN)
 
 This repository is the implementation of CurvGAN in PyTorch. 
 
