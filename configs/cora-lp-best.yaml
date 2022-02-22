@@ -1,0 +1,43 @@
+# -----------------
+# ---- Model ------
+# -----------------
+task: 'lp'
+manifold: 'PoincareBall'
+dims: 16
+walk_num: 20
+walk_len: 5
+dc_r: 2
+dc_t: 1
+dropout: 0.2
+n_iter: 10
+
+# -----------------
+# --- Training ----
+# -----------------
+max_epochs: 100
+g_epochs: 5
+d_epochs: 10
+g_batch_size: 128
+d_batch_size: 128
+cuda: 0
+save: true
+c: 1.0
+seed: 1234
+optimizer: 'Adam'
+lr_g: 0.002
+lr_d: 0.002
+weight_decay_d: 0.0001
+weight_decay_g: 0.001
+lr_reduce_freq: Null
+gamma: 0.5
+save_dir: Null
+label_smooth: 1
+lmda: 0
+patience: 30
+
+
+# -----------------
+# ----- Data ------
+# -----------------
+dataset: 'cora'
+test_prop: 0.2
